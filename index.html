@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link-->
+    <link rel="icon" href="liker.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Liker | Голда</title>
+</head>
+<body>
+    <div class="all">
+        <ul>
+            <li><a href="index.html" style="font-family: Arial;">Домой</a></li>
+            <li><a href="#" style="font-family: Arial;">О нас</a></li>
+            <li><a href="pay.html" style="font-family: Arial;">Оплата</a></li>
+            <li><a href="user.html" style="font-family: Arial;">Отзывы</a></li>
+            <li class="pointer" style="float:right"><button id="btn_modal_window">Контакты</button></li>
+            <div class="modal" id="mymodal">
+              <div class="modal_content">
+                  <span class="close_modal">&times;</span>
+                  <form action="" method="">
+                    <h1 style="text-align: center;">Contact</h1>
+                    <p style="text-align: center;">Inst: <a href="https://www.instagram.com/liker.gold/" target="_blank" style="color: rgb(231, 217, 245);">liker.gold</a></p>
+                  </form>
+              </div>
+          </div>
+        </ul>
+    </div>
+    <div class="main__pg">
+        <h1 style="text-align: center; padding-top: 40px;">Дешёвая голда только у нас!</h1>
+        <p style="text-align: center;"><b>100г = 30р</b> <s>50р</s></p>
+        <p style="text-align: center;"><b>500г = 150р</b> <s>210р</s></p>
+        <p style="text-align: center;"><b>1000г = 300р</b> <s>250р</s></p>
+        <p style="text-align: center;"><b>3000г = 500р</b> <s>1000р</s></p>
+        <p style="margin: 0;"><img src="img.png" width="500px" height="790px"></p>
+    </div>
+</body>
+<script>
+    var modal = document.getElementById("mymodal");
+    var btn = document.getElementById("btn_modal_window");
+    var close = document.getElementsByClassName("close_modal")[0];
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    close.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if(event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</html>

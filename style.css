@@ -1,0 +1,14 @@
+body {
+    font-family: Arial;
+    background-color: rgb(239, 221, 255);
+}
+button {
+    padding: 15px;
+    background-color: rgb(131, 130, 130);
+    border: unset;
+    cursor: pointer;
+    color: white;
+}
+button:hover {
+    background-color: rgb(179, 175, 175);
+}
